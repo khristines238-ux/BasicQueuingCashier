@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblQueue = new System.Windows.Forms.Label();
-            this.btnCashierWindow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCashier
@@ -77,29 +76,18 @@
             this.lblQueue.TabIndex = 3;
             this.lblQueue.Text = "P - 10007";
             // 
-            // btnCashierWindow
-            // 
-            this.btnCashierWindow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCashierWindow.Location = new System.Drawing.Point(309, 163);
-            this.btnCashierWindow.Name = "btnCashierWindow";
-            this.btnCashierWindow.Size = new System.Drawing.Size(104, 23);
-            this.btnCashierWindow.TabIndex = 4;
-            this.btnCashierWindow.Text = "Cashier Window";
-            this.btnCashierWindow.UseVisualStyleBackColor = true;
-            this.btnCashierWindow.Click += new System.EventHandler(this.BtnOpenCashierWindow_Click);
-            // 
             // QueuingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 198);
-            this.Controls.Add(this.btnCashierWindow);
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCashier);
             this.Name = "QueuingForm";
             this.Text = "QueuingForm";
+            this.Load += new System.EventHandler(this.QueuingForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,7 +99,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblQueue;
-        private System.Windows.Forms.Button btnCashierWindow;
     }
 }
 

@@ -26,13 +26,9 @@ namespace BasicQueuingCashier
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
         }
 
-        private void BtnOpenCashierWindow_Click(object sender, EventArgs e)
-        {
-            CashierWindowQueueForm cashierWindow = new CashierWindowQueueForm();
-            cashierWindow.Show();  
-        }
+        
 
-        private void btnCashierWindow_Click(object sender, EventArgs e)
+        private void QueuingForm_Load(object sender, EventArgs e)
         {
 
         }
