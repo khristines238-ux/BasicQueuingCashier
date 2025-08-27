@@ -16,6 +16,9 @@ namespace BasicQueuingCashier
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            var Queform = new QueuingForm();
+            var CashierWindowQueueForm = new CashierWindowQueueForm();
+            CashierWindowQueueForm.Show();
             Application.Run(new QueuingForm());
         }
     }
