@@ -49,24 +49,26 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Location = new System.Drawing.Point(26, 26);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(91, 35);
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.Location = new System.Drawing.Point(26, 67);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(91, 28);
             this.btnNext.TabIndex = 1;
             this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // listCashierQueue
@@ -88,12 +90,13 @@
             this.listCashierQueue.TabIndex = 2;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
             this.listCashierQueue.View = System.Windows.Forms.View.List;
-           this.listCashierQueue.SelectedIndexChanged += new System.EventHandler(this.ListCashierQueue_SelectedIndexChanged);
+            this.listCashierQueue.SelectedIndexChanged += new System.EventHandler(this.ListCashierQueue_SelectedIndexChanged);
             // 
             // CashierWindowQueueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(422, 377);
             this.Controls.Add(this.listCashierQueue);
             this.Controls.Add(this.btnNext);
