@@ -33,13 +33,20 @@ namespace BasicQueuingCashier
         {
             if (CashierClass.CashierQueue.Count > 0)
             {
-                string served = CashierClass.CashierQueue.Dequeue();
-                MessageBox.Show("Now Serving: " + served);
+                string Serve = CashierClass.CashierQueue.Dequeue();
                 DisplayCashierQueue(CashierClass.CashierQueue);
+
+                foreach (Form frm in Application.OpenForms)
+                {
+                    if (frm is CustomerView)
+                    {
+                        ((CustomerView)frm).UpdateServing(Serve);
+                        break;
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("No more customers in queue!");
             }
         }
 
@@ -71,5 +78,6 @@ namespace BasicQueuingCashier
         {
 
         }
+
     }
 }

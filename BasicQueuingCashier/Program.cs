@@ -19,6 +19,10 @@ namespace BasicQueuingCashier
             var Queform = new QueuingForm();
             var CashierWindowQueueForm = new CashierWindowQueueForm();
             CashierWindowQueueForm.Show();
+
+            var Customer = new CustomerView();
+            Customer.Show();
+
             Application.Run(new QueuingForm());
         }
     }
